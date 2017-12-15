@@ -39,6 +39,17 @@ namespace Money_Counter_Assignment
 
         }
 
+        private void picbox_10pence_Click(object sender, EventArgs e)
+        {
+            int numb = 0;  //declares variable 
+            int numb2 = 0; //declares variable
+
+            if (Convert.ToInt32(costpercred_box.Text) > 0.0) //converts the specified integer
+            {
+                
+
+                totalval_txtinput.Text = Convert.ToString((int)(numb2 + 10)); //converts into string and adds the coin amount per click
+                txtbox_poundinput.Text = $"{Convert.ToDouble(totalval_txtinput.Text) / 100.0:n2}"; //formats the outcome number e.g. 7000.00 will become 7,000.00
 
             }
             else
